@@ -1,0 +1,93 @@
+function first_secondCell(){
+		if(+document.form108261667.cell1.value < 150){
+
+			if(+document.form108261667.cell1.value < 40){
+				if(+document.form108261667.cell2.value<=5){
+					return 32000;
+				}else if(+document.form108261667.cell2.value<=7){
+					return 39000;
+				}else{
+					return 38000;
+				}
+
+			}else if(+document.form108261667.cell1.value < 60){
+				if(+document.form108261667.cell2.value<=5){
+					return 42000;
+				}else if(+document.form108261667.cell2.value<=6){
+					return 44000;
+				}else if(+document.form108261667.cell2.value<=7){
+					return 45000;
+				}else{
+					return 42000;
+				}
+
+			}else if(+document.form108261667.cell1.value < 80){
+				if(+document.form108261667.cell2.value<=5){
+					return 44000;
+				}else if(+document.form108261667.cell2.value<=7){
+					return 46000;
+				}else{
+					return 44000;
+				}
+
+			}else if(+document.form108261667.cell1.value < 100){
+				if(+document.form108261667.cell2.value<=5){
+					return 46000;
+				}else if(+document.form108261667.cell2.value<=7){
+					return 48000;
+				}else{
+					return 46000;
+				}
+
+			}else{
+				return +document.form108261667.cell1.value * 450;
+			}
+
+		}else if(+document.form108261667.cell1.value >= 150 && +document.form108261667.cell1.value < 250){
+			if (+document.form108261667.cell2.value <= 5){
+				return +document.form108261667.cell1.value * 430
+			}else if(+document.form108261667.cell2.value == 6){
+				return +document.form108261667.cell1.value * 440
+			}else{
+				return +document.form108261667.cell1.value * 450;
+			}
+		}else if(+document.form108261667.cell1.value >= 250 && +document.form108261667.cell1.value <= 10000){
+			return +document.form108261667.cell1.value * 430;
+		}
+	}
+
+	function third_fifthCell(){
+		return +document.form108261667.cell3.value * 150 + +document.form108261667.cell4.value * 15 + +document.form108261667.cell5.value * 15;
+	}
+	function sevenCell(){
+		if(document.form108261667.cell6.value == 1){
+			if(+document.form108261667.cell7.value>5){
+				return (first_secondCell() + third_fifthCell()) * (+document.form108261667.cell7.value-5)/100;
+			}else if(+document.form108261667.cell7.value>0){
+				return 0;
+			}else{
+				return (first_secondCell() + third_fifthCell()) * 0.01;
+			}
+		}else{
+			if(+document.form108261667.cell7.value>5){
+				return (first_secondCell() + third_fifthCell()) * (+document.form108261667.cell7.value-5)/100;
+			}else{
+				return 0;
+			}
+		}
+	}
+
+	function eightCell(){
+		if(+document.form108261667.cell8.value == 1){
+			return (first_secondCell() + third_fifthCell() + sevenCell()) * 0.1;
+		}else{
+			return 0;
+		}
+	}
+	function calculate(){
+		document.getElementById("price").innerHTML = first_secondCell() + third_fifthCell() + sevenCell() + Math.round(eightCell());
+		console.log ("1-2 ячейка: " + first_secondCell() );
+		console.log ("3-5 ячейка: " + third_fifthCell() );
+		console.log ("7 ячейка: " + sevenCell() );
+		console.log ("8 ячейка: " + eightCell() );
+	}
