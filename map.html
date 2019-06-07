@@ -2,38 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Карта моек</title>
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-
-<base href="https://shinliga.ru/" />
-<meta name="robots" content="noindex, nofollow">
-<link href="/favicon.ico" rel="shortcut icon">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<!--/assets/cache_image/assets/components/siteextra/web/img/spec1_1x1_98d.png-->
-<!-- Stylesheets -->
-
-<link href="/tpl/css/bootstrap.css" rel="stylesheet">
-<link href="/tpl/css/revolution-slider.css" rel="stylesheet">
-<link href="/tpl/css/owl.css" rel="stylesheet">
-<link href="/tpl/css/style.css?ver=11" rel="stylesheet">
-<link href="/tpl/css/responsive.css?ver=11" rel="stylesheet">
-<!-- Responsive -->
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://shinliga.ru/app/res/load.css" type="text/css" />
-<script type="text/javascript" src="https://shinliga.ru/app/res/load.js"></script>
-
-  
-   <title>Размещение в скрытом контейнере</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;" type="text/javascript"></script>
-    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
-
-  </head>
+	</head>
+	
 
 <body>
   
@@ -111,7 +81,7 @@ const initMaps = () => {
 	.done(function (ymaps) {
         const defaultKey = 'all';
         var getUrlAction = (filter) => {
-            return filter && filter != defaultKey ? `https://shinliga.ru/karty/mojki/${filter}` : 'https://shinliga.ru/mojki';
+            return filter && filter != defaultKey ? `https://sait/karty/mojki/${filter}` : 'https://sait/mojki';
 
        
         };
