@@ -1,0 +1,22 @@
+"refusing to merge unrelated histories" - разные истории в вашей локальной ветке и на удаленной ветке: git pull origin master --allow-unrelated-histories
+
+# Удалить все файлы и папки в вашем репозитории
+git rm -r .
+
+#список удаленных репозиториев 
+git remote -v
+
+#удаление папки с локального репозитория
+Remove-Item -Recurse -Force lend1
+
+#Переименование файла:
+git mv старое_имя.txt новое_имя.txt
+
+#Добавление изменений в индекс:
+git add новое_имя.txt
+
+#Фиксация изменений
+git commit -m "Переименование файла"
+
+#Отправка изменений на сервер:
+git push
