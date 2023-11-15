@@ -1,0 +1,252 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Quiz</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#00569e">
+  <script>
+    (function(w, d, u, i, o, s, p) {
+        if (d.getElementById(i)) { return; } w['MangoObject'] = o;
+        w[o] = w[o] || function() { (w[o].q = w[o].q || []).push(arguments) }; w[o].u = u; w[o].t = 1 * new Date();
+        s = d.createElement('script'); s.async = 1; s.id = i; s.src = u;
+        p = d.getElementsByTagName('script')[0]; p.parentNode.insertBefore(s, p);
+    }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
+    mgo({calltracking: {id: 31157, elements: [{"numberText":"74991106854"}]}});
+</script>
+
+</head>
+<body class="page">
+<section class="main-quiz">
+  <header class="page__header header">
+    <div class="container header__inner">            
+        <span class="company-slogan header__slogan"></span>
+        <a href="tel:+74991106854">+7 (499) 110-68-54</a>      
+    </div>
+  </header>
+  
+  <div class="container">
+  <h1 class="main-title">Новогодняя световая иллюминация дома по индивидуальному дизайну за 2 дня</h1>          
+          <ul class="quiz__list quiz-list">
+            <li class="quiz-list__item">За 2022 г. украсили более 300 домов</li>
+            <li class="quiz-list__item">Работаем по все России: команды в 73 городах России</li>
+            <li class="quiz-list__item">Срок гарантийной эксплуатации - 5 лет</li>
+
+            <li class="quiz-list__item">Собственный автопарк с оборудованием и полный склад со всеми украшениями в наличии</li>
+            <li class="quiz-list__item">Автономное питание, гарантия безопасности и проверка нагрузки, беспроводной выключатель</li>
+            <li class="quiz-list__item">Работам под ключ- сами повесим и снимем</li>
+          </ul>
+        </div>  
+  </div>  
+      <div class="container quiz" data-quiz="quiz">              
+        <p>Пройдите тест из 3х вопросов и получите за 3 часа дизайн украшения дома и подробную смету бесплатно</p>    
+        <button class="quiz__button" data-quiz-start="quiz">Пройти опрос, получить дизайн проект оформления и скидку 30% при заказе в октябре</button>
+        <hr>
+        <span class="quiz__dead-end">До окончания срока акции осталось:</span>
+        <div id="timer" class="timer">
+        <div class="timer__item">
+          <div class="days timer__value">6</div>
+          <span class="timer__descr">дня</span>
+        </div>        
+        <div class="timer__item">
+          <div class="hours timer__value">6</div>
+          <span class="timer__descr">часов</span>
+        </div>        
+        <div class="timer__item">
+          <div class="minutes timer__value">6</div>
+          <span class="timer__descr">минут</span>
+        </div>        
+        <div class="timer__item">
+          <div class="seconds timer__value">6</div>
+          <span class="timer__descr">секунд</span>
+        </div>
+
+        <div class="quiz__popup" data-quiz-popup>
+          <button class="quiz__close" title="Закрыть квиз" data-quiz-close></button>
+          <div class="quiz__inner">
+            <div class="quiz__info">
+              <div class="quiz-progress quiz__progress" data-quiz-progress>
+                <div class="quiz-progress__percents" data-percent>0</div>
+                <div class="quiz-progress__track" data-track>
+                  <div class="quiz-progress__filler" data-filler></div>
+                </div>
+              </div>
+            </div>
+            <div class="quiz__content">
+              <div class="quiz__notification" data-quiz-notification="waiting">
+                  <span class="quiz__heading">Пожалуйста, ожидайте...</span>
+              </div>
+              <div class="quiz__notification" data-quiz-notification="done">
+                <span class="quiz__heading quiz__heading--big">Спасибо!</span>
+                <p class="quiz__description">
+                  Квиз завершен.
+                </p>
+              </div>
+              <form class="quiz__steps" method="post" action="/php/quiz-mail.php" data-quiz-steps>           
+          
+                <div class="quiz__step quiz-step" data-step-branches="master" data-step>
+                <span class="quiz__heading">Что хотите украсить</span>
+                  <div class="quiz-radio-image" data-radio-group="default" data-quiz-required="radio">
+                  <label class="quiz-radio__item">
+                      <input type="radio" name="quiz[type]" value="Беседку" checked data-step-branch="master" class="quiz-radio-image__input">
+                      <div class="quiz-radio-image__pic" style="background-image: url(img/bes.jpg);"></div>
+                      <span class="quiz-radio-image__text">Беседку</span>
+                    </label>                   
+                    <label class="quiz-radio__item">
+                      <input type="radio" name="quiz[type]" value="Дом" data-step-branch="master" class="quiz-radio-image__input">
+                      <div class="quiz-radio-image__pic" style="background-image: url(img/dom.jpg);"></div>
+                      <span class="quiz-radio-image__text">Дом</span>
+                    </label>                    
+                    <label class="quiz-radio__item">
+                      <input type="radio" name="quiz[type]" value="Участок" data-step-branch="master" class="quiz-radio-image__input">
+                      <div class="quiz-radio-image__pic" style="background-image: url(img/sl5.jpg);"></div>
+                      <span class="quiz-radio-image__text">Участок</span>
+                    </label>
+                    <label class="quiz-radio__item">
+                      <input type="radio" name="quiz[type]" value="Входную группу" data-step-branch="master" class="quiz-radio-image__input">
+                      <div class="quiz-radio-image__pic" style="background-image: url(img/vhod.jpg);"></div>
+                      <span class="quiz-radio-image__text">Входную группу</span>
+                    </label>
+                    <label class="quiz-radio__item">
+                      <input type="radio" name="quiz[type]" value="Другое" data-step-branch="master" class="quiz-radio-image__input">
+                      <div class="quiz-radio-image__pic" style="background-image: url(img/hs.png);"></div>
+                      <span class="quiz-radio-image__text">Другое</span>
+                    </label>
+                  </div>
+                </div> 
+
+                <div class="quiz__step quiz-step" data-step-branches="master" data-step>
+                  <span class="quiz__heading">Местоположение</span>
+                  <label class="quiz-step__text">                    
+                    <input type="text" name="quiz[place]" class="quiz-step__text-input" data-quiz-text>                    
+                  </label>
+                </div>                            
+               
+                <div class="quiz__step quiz-step" data-step-branches="master" data-step> 
+                <span class="quiz__heading">Ваши контакты</span>                 
+                  <label class="quiz-step__text" data-quiz-required="text">
+                    Ваше имя *
+                    <input type="text" name="quiz[name]" class="quiz-step__text-input" data-quiz-text>
+                    <span class="quiz-step__error" data-quiz-error>Поле должно быть заполнено</span>
+                  </label>                 
+                  <label class="quiz-step__text" data-quiz-required="text">
+                    Ваш телефон *
+                    <input data-phonemask type="text" name="quiz[phone]" class="quiz-step__text-input" data-quiz-text>
+                    <span class="quiz-step__error" data-quiz-error>Поле должно быть заполнено</span>
+                  </label>
+                </div>
+
+                <div class="quiz__step quiz-step" data-step-branches="master" data-step>
+                  <span class="quiz__heading">Выберите удобный способ связи</span>
+                    <div class="quiz-radio-image" data-radio-group="default" data-quiz-required="radio">
+                    <label class="quiz-radio__item">
+                        <input type="radio" name="quiz[message]" value="Телефон" checked data-step-branch="master" class="quiz-radio-image__input">
+                        <div class="quiz-radio-image__pic" style="background-image: url(img/tel.png);"></div>
+                        <span class="quiz-radio-image__text">Телефон</span>
+                      </label>
+                      <label class="quiz-radio__item">
+                        <input type="radio" name="quiz[message]" value="WhatsApp" data-step-branch="master" class="quiz-radio-image__input">
+                        <div class="quiz-radio-image__pic" style="background-image: url(img/wa.png);"></div>
+                        <span class="quiz-radio-image__text">WhatsApp</span>
+                      </label>
+                      <label class="quiz-radio__item">
+                        <input type="radio" name="quiz[message]" value="Telegram" data-step-branch="master" class="quiz-radio-image__input">
+                        <div class="quiz-radio-image__pic" style="background-image: url(img/tg.jpg);"></div>
+                        <span class="quiz-radio-image__text">Telegram</span>
+                      </label>                        
+                    </div>
+                  </div>
+                
+                <div class="quiz__step quiz-step" data-step-branches="master delivery_region_custom" data-step>
+                  <span class="quiz__heading">Спасибо!</span>
+                  <p class="quiz-step__description">
+                    Квиз закончен.
+                  </p>
+                </div>
+              </form>
+            </div>
+            <div class="quiz__actions">
+              <button class="quiz-prev" title="Назад" data-quiz-prev></button>
+              <button class="quiz__next quiz-button" title="Далее" data-quiz-next>Далее</button>
+              <div class="quiz__tip">или нажмите Enter</div>
+            </div>
+          </div>
+        </div>   
+  </section>
+
+ <section class="vagon-gallery">
+  <h2 class="section-title vagon-samples__title">Наши работы с примерами</h2>
+  <div class="slider slider--full-size">
+      <div class="slider-controls">
+        <button class="slider-control slider-control--prev" data-slider-prev="vagon-gallery"></button>
+        <button class="slider-control slider-control--next" data-slider-next="vagon-gallery"></button>
+      </div>
+      <div class="slider__inner" data-slider="vagon-gallery">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="vagon-gallery__item" style="background-image: url(img/gallery/sl1.jpg);"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="vagon-gallery__item" style="background-image: url(img/gallery/sl2.jpg);"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="vagon-gallery__item" style="background-image: url(img/gallery/sl3.jpg);"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="vagon-gallery__item" style="background-image: url(img/gallery/sl4.jpg);"></div>
+          </div> 
+          <div class="swiper-slide">
+            <div class="vagon-gallery__item" style="background-image: url(img/gallery/sl5.jpg);"></div>
+          </div> 
+          <div class="swiper-slide">
+            <div class="vagon-gallery__item" style="background-image: url(img/gallery/sl6.jpg);"></div>
+          </div> 
+        </div>
+      </div>
+      <div class="slider-pagination" data-slider-pagination="vagon-gallery"></div>
+  </div>
+ </section>
+
+ <footer class="footer">
+  <div class="container footer__inner">
+    <span class="footer__copyright">
+    г. Москва   
+    </span>
+  </div>
+ </footer>
+
+ <div class="popup">
+    <div id="video-popup" class="popup__content popup__content--video mfp-hide">
+      <iframe class="popup__video" data-popup-video src="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <div class="popup">
+    <div id="success-popup" class="popup__content mfp-hide">
+      <span class="popup__title">
+        Ваша заявка принята, ожидайте ответа
+      </span>
+      <button class="popup__back" data-popup-close>Вернуться на главную</button>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
